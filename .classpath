@@ -13,5 +13,6 @@
 			<attribute name="owner.project.facets" value="jst.web;#system#"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/01DevelopKits/lombok.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
