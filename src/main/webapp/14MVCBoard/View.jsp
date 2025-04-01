@@ -41,7 +41,7 @@
 		<tr>
 			<td>첨부 파일</td>
 			<td>
-				<c:if test="${ not empty dto.ofile}">
+				<c:if test="${ not empty dto.ofile }">
 				${ dto.sfile }
 				<a href="../mvcboard/download.do?ofile=${ dto.ofile }&sfile=${ dto.sfile }
 				&idx=${ dto.idx }">[다운로드]</a>
@@ -54,9 +54,9 @@
 		<tr>
 		<td colspan="4" align="center">
 			<button type="button" 
-					onclick="location.href='../mvcboard/pass.do?mode=edit&idx=${param.idx }';">수정 하기</button>
+					onclick="location.href='../mvcboard/pass.do?mode=edit&idx=${ param.idx }';">수정 하기</button>
 			<button type="button" 
-					onclick="location.href='../mvcboard/pass.do?mode=delete&idx=${param.idx }';">삭제하기</button>
+					onclick="location.href='../mvcboard/pass.do?mode=delete&idx=${ param.idx }';">삭제하기</button>
 			<button type="button" 
 					onclick="location.href='../mvcboard/list.do';">목록 바로가기</button>
 		</td>
