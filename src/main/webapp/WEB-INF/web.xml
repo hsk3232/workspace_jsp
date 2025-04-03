@@ -90,5 +90,24 @@
 		<url-pattern>/mvcboard/write.do</url-pattern>
 	</servlet-mapping>
 	
+	<filter>
+		<filter-name>BasicFilter</filter-name>
+		<filter-class>filter.BasicFilter</filter-class>
+		<init-param>
+			<param-name>FILTER_INIT_PARAM</param-name>
+			<param-value>필터 초기화 매개변수</param-value>
+		</init-param>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>BasicFilter</filter-name>
+		<url-pattern>/15FilterListener/BasicFilter.jsp</url-pattern>
+		<!-- <url-pattern>/*</url-pattern> 이러면 필터가 불러오는 모든 사이트를 탐.-->
+	</filter-mapping>
+	
+	<context-param>
+		<param-name>CHAT_ADDR</param-name>
+		<param-value>ws://10.125.121.172:8080/MustHave</param-value>
+	</context-param>
 
 </web-app>
